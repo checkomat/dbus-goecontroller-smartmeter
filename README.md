@@ -16,7 +16,7 @@ dbus-shelly-3em-smartmeter via https://github.com/fabian-lauer/dbus-shelly-3em-s
 ### Script
 - Runs as a service
 - Connects to DBus of the Venus OS `com.victronenergy.grid.http_40`
-- After successful DBus connection go-e controller is accessed via REST-API, using the first 3 sensors to calculate real power für for L1, L2, L3 of the grid
+- After successful DBus connection go-e controller is accessed via REST-API, using the first 3 sensors to calculate real power for L1, L2, L3 of the grid
 - Paths are added to the DBus including some settings like name, etc
 - After that a "loop" is started which pulls data every 750ms from the REST-API and updates the values in the DBus
 
