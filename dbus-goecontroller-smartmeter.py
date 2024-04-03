@@ -172,27 +172,22 @@ class DbusGoeControllerService:
       #IPS - current phase selections
       #IIM - invert current measurement
 	
-      #DLL download link for app csv export - http://192.168.3.216/api/status?filter=dll
-
-      #"PV Inverter" passt, wird via openDTU eingebunden, aber damit etwas langsamer als die Messungen via go-e controller.
- 
       #send data to DBus
       #https://github.com/victronenergy/venus/wiki/dbus#grid-and-genset-meter
       #https://github.com/supermihi/goe
 
       # controller category phase currents
-      grid_L1_i = meter_data['cpc'][1][0] #1.321428537
-      grid_L2_i = meter_data['cpc'][1][1] #1.502253413
-      grid_L3_i = meter_data['cpc'][1][2] #0.548080862
+      grid_L1_i = meter_data['cpc'][1][0] 
+      grid_L2_i = meter_data['cpc'][1][1] 
+      grid_L3_i = meter_data['cpc'][1][2] 
 
-      grid_L1_u = meter_data['usv'][0]['u1'] #238.2629634
-      grid_L2_u = meter_data['usv'][0]['u2'] #230.936613
-      grid_L3_u = meter_data['usv'][0]['u3'] #233.728505
+      grid_L1_u = meter_data['usv'][0]['u1'] 
+      grid_L2_u = meter_data['usv'][0]['u2'] 
+      grid_L3_u = meter_data['usv'][0]['u3'] 
 
-      # leistung direkt ueber sensoren, nur wenn PV da nicht dabei ist, sonst PV 1-phasig oder 3-phasig abziehen
-      grid_L1_p = meter_data['isv'][0]['p'] #-223.0598625
-      grid_L2_p = meter_data['isv'][1]['p'] #187.6984837
-      grid_L3_p = meter_data['isv'][2]['p'] #87.25342864
+      grid_L1_p = meter_data['isv'][0]['p'] 
+      grid_L2_p = meter_data['isv'][1]['p'] 
+      grid_L3_p = meter_data['isv'][2]['p'] 
 
       self._dbusservice['/Ac/L1/Power'] = grid_L1_p # W, real power (wirkleistung) 
       self._dbusservice['/Ac/L2/Power'] = grid_L2_p # W, real power (wirkleistung) 
