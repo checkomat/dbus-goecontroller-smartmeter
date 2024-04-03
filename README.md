@@ -1,8 +1,8 @@
 # dbus-goecontroller-smartmeter
-script to integrate go-e controller as a grid meter for [Victron Energies Venus OS](https://github.com/victronenergy/venus)
+dbus service to integrate go-e controller as a grid meter for [Victron Energies Venus OS](https://github.com/victronenergy/venus)
 
 ## Purpose
-With the scripts in this repo it should be easy possible to install, uninstall, restart a service that connects the go-e controller to the VenusOS and GX devices from Victron.
+With the scripts in this repo you install, uninstall, restart a service that connects the go-e controller to the VenusOS and GX devices from Victron.
 
 ## Based on 
 fabian-lauer / dbus-shelly-3em-smartmeter via https://github.com/fabian-lauer/dbus-shelly-3em-smartmeter
