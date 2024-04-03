@@ -131,7 +131,6 @@ class DbusGoeControllerService:
       #3 "Relais"
       #4 "Solar"
       #5 "Akku"
-      #6 "HP-Comp"
       #..
       #15 "Custom 10"
 
@@ -161,7 +160,6 @@ class DbusGoeControllerService:
       #3[0,1,2,3] "Relais"	
       #4[0,1,2,3] "Solar"	
       #5[0,1,2,3] "Akku"	
-      #6[0,1,2,3] "HP-Comp"
       #..
       #15[0,1,2,3]
 
