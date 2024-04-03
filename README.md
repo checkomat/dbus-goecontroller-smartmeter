@@ -60,6 +60,7 @@ Within the project there is a file `/data/dbus-goecontroller-smartmeter/config.i
 ### Install
 
 chmod a+x /data/dbus-goecontroller-smartmeter/install.sh
+
 /data/dbus-goecontroller-smartmeter/install.sh
 
 ## Documentation
