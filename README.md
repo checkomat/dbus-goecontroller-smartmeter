@@ -22,6 +22,18 @@ fabian-lauer / dbus-shelly-3em-smartmeter via https://github.com/fabian-lauer/db
 
 ### Pictures
 
+cerbo console example
+
+![title-image](img/console.png)
+
+terminal command `dbus-spy`
+
+![title-image](img/dbus-spy1.png)
+
+terminal command `dbus-spy` - details
+
+![title-image](img/dbus-spy2.png)
+
 ### Get the code
 Grap a copy of the main branche and copy them to `/data/dbus-goecontroller-smartmeter`.
 
