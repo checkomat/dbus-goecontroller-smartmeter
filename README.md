@@ -17,7 +17,6 @@ fabian-lauer / dbus-shelly-3em-smartmeter via https://github.com/fabian-lauer/db
 - Runs as a service
 - Connects to DBus of the Venus OS `com.victronenergy.grid.http_40`
 - After successful DBus connection go-e controller is accessed via REST-API, using the first 3 sensors to calculate real power für for L1, L2, L3 of the grid
-  A sample JSON file from go-econtroller can be found [here](docs/goecontroller-all-sample.json)
 - Paths are added to the DBus including some settings like name, etc
 - After that a "loop" is started which pulls data every 750ms from the REST-API and updates the values in the DBus
 
