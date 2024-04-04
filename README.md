@@ -57,31 +57,37 @@ Within the project there is a file `/data/dbus-goecontroller-smartmeter/config.i
 | ONPREMISE  | Host | IP or hostname of the go-e controller |
 | ONPREMISE  | Serial | Serialnumber of the go-e controller |
 
-### Make executeable
+### Step by step installation and debugging
+
+#### Make executeable
 
 chmod a+x /data/dbus-goecontroller-smartmeter/install.sh
 
-### Install (starts service and adds install.sh to rc.local)
+#### Install (starts service and adds install.sh to rc.local)
 
 /data/dbus-goecontroller-smartmeter/install.sh
 
-###  Restart the service - e.g. after a config.ini change  
-
+####  Restart the service - e.g. after a config.ini change  
+```
 /data/dbus-opendtu/restart.sh
-
-### Look for service `com.victronenergy.grid.http_40` and check logfile
-
+```
+#### Look for service `com.victronenergy.grid.http_40` and check logfile
+```
 dbus-spy
-
-look into `/data/dbus-goecontroller-smartmeter/current.log`
-
-### Debugging - look into current.log, or start script manually 
-
+```
+#### View log file
+```
+cat /data/dbus-goecontroller-smartmeter/current.log
+``` 
+#### Debugging - look into current.log, or start script manually 
+```
 python /data/dbus-goecontroller-smartmeter/dbus-goecontroller-smartmeter.py
+```
 
 ### Uninstall
-
+```
 /data/dbus-goecontroller-smartmeter/uninstall.sh
+```
 
 ## Documentation
 - https://github.com/victronenergy/venus/wiki/dbus#grid   DBus paths for Victron namespace GRID
