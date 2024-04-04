@@ -70,7 +70,7 @@ chmod a+x /data/dbus-goecontroller-smartmeter/install.sh
 ```
 ###  Restart the service - e.g. after a config.ini change  
 ```
-/data/dbus-opendtu/restart.sh
+/data/dbus-goecontroller-smartmeter/restart.sh
 ```
 ### Look for service `com.victronenergy.grid.http_40` and check logfile
 ```
