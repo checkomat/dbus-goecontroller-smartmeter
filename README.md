@@ -73,17 +73,19 @@ chmod a+x /data/dbus-goecontroller-smartmeter/install.sh
 
 dbus-spy
 
-### Uninstall
-
-/data/dbus-goecontroller-smartmeter/uninstall.sh
-
-### Check if the script is running, look for service `com.victronenergy.grid.http_40`
+### Look for service `com.victronenergy.grid.http_40`
 
 dbus-spy
 
-## Debugging - start script manually and look into `/data/dbus-goecontroller-smartmeter/current.log`
+### Debugging - start script manually and check logfile
 
 python /data/dbus-goecontroller-smartmeter/dbus-goecontroller-smartmeter.py
+
+look into `/data/dbus-goecontroller-smartmeter/current.log`
+
+### Uninstall
+
+/data/dbus-goecontroller-smartmeter/uninstall.sh
 
 ## Documentation
 - https://github.com/victronenergy/venus/wiki/dbus#grid   DBus paths for Victron namespace GRID
