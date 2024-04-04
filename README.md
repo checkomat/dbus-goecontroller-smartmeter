@@ -34,10 +34,13 @@ terminal command `dbus-spy` - details
 
 ![title-image](img/dbus-spy2.png)
 
+### required tools
+putty or other SSH-terminal (and winscp)
+
 ### Get the code
+SSH to your cerbo.
 Grap a copy of the main branche and copy them to `/data/dbus-goecontroller-smartmeter`.
 
-The following script should do everything for you:
 ```
 wget https://github.com/checkomat/dbus-goecontroller-smartmeter/archive/refs/heads/main.zip
 unzip main.zip "dbus-goecontroller-smartmeter-main/*" -d /data
@@ -57,33 +60,30 @@ Within the project there is a file `/data/dbus-goecontroller-smartmeter/config.i
 | ONPREMISE  | Host | IP or hostname of the go-e controller |
 | ONPREMISE  | Serial | Serialnumber of the go-e controller |
 
-### Step by step installation and debugging
-
-#### Make executeable
+### Make executeable
 ```
 chmod a+x /data/dbus-goecontroller-smartmeter/install.sh
 ```
-#### Install (starts service and adds install.sh to rc.local)
+### Install (starts service and adds install.sh to rc.local)
 ```
 /data/dbus-goecontroller-smartmeter/install.sh
 ```
-####  Restart the service - e.g. after a config.ini change  
+###  Restart the service - e.g. after a config.ini change  
 ```
 /data/dbus-opendtu/restart.sh
 ```
-#### Look for service `com.victronenergy.grid.http_40` and check logfile
+### Look for service `com.victronenergy.grid.http_40` and check logfile
 ```
 dbus-spy
 ```
-#### View log file
+### View log file
 ```
 cat /data/dbus-goecontroller-smartmeter/current.log
 ``` 
-#### start script manually to find problems 
+### start script manually to find problems 
 ```
 python /data/dbus-goecontroller-smartmeter/dbus-goecontroller-smartmeter.py
 ```
-
 ### Uninstall
 ```
 /data/dbus-goecontroller-smartmeter/uninstall.sh
