@@ -60,13 +60,13 @@ Within the project there is a file `/data/dbus-goecontroller-smartmeter/config.i
 ### Step by step installation and debugging
 
 #### Make executeable
-
+```
 chmod a+x /data/dbus-goecontroller-smartmeter/install.sh
-
+```
 #### Install (starts service and adds install.sh to rc.local)
-
+```
 /data/dbus-goecontroller-smartmeter/install.sh
-
+```
 ####  Restart the service - e.g. after a config.ini change  
 ```
 /data/dbus-opendtu/restart.sh
@@ -79,7 +79,7 @@ dbus-spy
 ```
 cat /data/dbus-goecontroller-smartmeter/current.log
 ``` 
-#### Debugging - look into current.log, or start script manually 
+#### start script manually to find problems 
 ```
 python /data/dbus-goecontroller-smartmeter/dbus-goecontroller-smartmeter.py
 ```
