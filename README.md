@@ -69,19 +69,15 @@ chmod a+x /data/dbus-goecontroller-smartmeter/install.sh
 
 /data/dbus-opendtu/restart.sh
 
-### Check if the script is working
+### Look for service `com.victronenergy.grid.http_40` and check logfile
 
 dbus-spy
-
-### Look for service `com.victronenergy.grid.http_40`
-
-dbus-spy
-
-### Debugging - start script manually and check logfile
-
-python /data/dbus-goecontroller-smartmeter/dbus-goecontroller-smartmeter.py
 
 look into `/data/dbus-goecontroller-smartmeter/current.log`
+
+### Debugging - look into current.log, or start script manually 
+
+python /data/dbus-goecontroller-smartmeter/dbus-goecontroller-smartmeter.py
 
 ### Uninstall
 
@@ -91,3 +87,7 @@ look into `/data/dbus-goecontroller-smartmeter/current.log`
 - https://github.com/victronenergy/venus/wiki/dbus#grid   DBus paths for Victron namespace GRID
 - https://github.com/victronenergy/venus/wiki/dbus-api   DBus API from Victron
 - https://www.victronenergy.com/live/ccgx:root_access   How to get root access on GX device/Venus OS
+- https://github.com/victronenergy/venus/wiki/dbus#grid-and-genset-meter
+- https://github.com/goecharger/go-eController-API/blob/main/apikeys-en.md
+  
+
